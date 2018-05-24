@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    
+    <ion-item>
+      <ion-label fixed>User name</ion-label>
+      <ion-input type="text" name="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date of birth</ion-label>
+      <!-- <ion-input type="date" name="dob"></ion-input> -->
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" name="pass"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="mail" name="email"></ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block (click)="login()">Register</button>
+    </div>
+
+  </ion-list>
+
+</ion-content>

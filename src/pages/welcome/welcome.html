@@ -1,0 +1,29 @@
+<ion-content scroll="false" class="bgimg">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      Lunchbox
+    </div>
+  </div>
+  <div padding class="loginbox">
+    <ion-list>
+
+        <ion-item>
+          <ion-label fixed>Username</ion-label>
+          <ion-input type="name"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label fixed>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+  
+    </ion-list>
+    <button ion-button block (click)="login()" class="login">Login</button>
+    <button ion-button block (click)="signup()">Sign up</button>
+    <!-- <a href="" (click)="signup()">Signup</a> -->
+    <!-- <ion-nav [root]="rootPage"></ion-nav> -->
+
+  </div>
+</ion-content>
